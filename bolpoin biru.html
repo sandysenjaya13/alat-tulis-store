@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alat Tulis Store</title>
+	<link rel="stylesheet" type="text/css" href="artikel.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="header" id="myHeader">
+		<div class="container">
+			<a href="index.html"><img alt="Alat Tulis Store" src="Alat Tulis Store.jpg" /></a>
+			<a href="index.html"><h1>Alat Tulis Store</h1></a>
+			<div class="topnav">
+				<a href="#">Pensil</a>
+				<a href="#">Bolpoin</a>
+				<a href="#">Penghapus</a>
+				<a href="#">Tipex</a>
+			</div>
+			<p class="nama">Sandy Senjaya</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="leftcolumn">
+			<img alt="Bolpoin Biru" src="Bolpoin Biru.jpg" />
+			<div class="info">
+				<h2>Bolpoin Biru</h2>
+				<p class="harga">Rp. 3500</p>
+				<p>Stok tersedia: 4</p>
+				<a href="index.html"><button type="button" class="btn" onclick="alert('Terima kasih sudah membeli produk ini.')">Beli</button></a>
+			</div>
+		</div>
+		<div class="rightcolumn" id="rightcolumn">
+			<div class="card">
+				<h2>Penjualan Terlaris</h2>
+				<div class="terlaris">
+				<h2><a href="bolpoin hitam.html">1. Bolpoin Hitam</a></h2>
+				<a href="bolpoin hitam.html"><img src="Bolpoin Hitam.jpg" /></a>
+				<h2><a href="pensil 2b.html">2. Pensil 2B</a></h2>
+				<a href="pensil 2b.html"><img src="Pensil 2B.jpg" /></a>
+				<h2><a href="penghapus pensil.html">3. Penghapus Pensil</a></h2>
+				<a href="penghapus pensil.html"><img src="Penghapus Pensil.jpg" /></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="tengah">
+		<a href="index.html"><img alt="Alat Tulis Store" src="Alat Tulis Store.jpg" /></a>
+		<h1><a href="index.html">Alat Tulis Store</a></h1>
+		<p>Terima kasih sudah berbelanja di toko kami.</p>
+		</div>
+	</div>
+	
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+		  } else {
+			header.classList.remove("sticky");
+		  }
+		}
+	</script>
+	
+</body>
+</html>

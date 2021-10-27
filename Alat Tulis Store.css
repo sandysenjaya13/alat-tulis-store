@@ -1,0 +1,271 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	background: #f2f2f2;
+	color: #111;
+	font-family: 'Roboto', sans-serif;body
+}
+
+.container{
+	max-width: 1600px;
+	margin: auto;
+}
+
+.header{
+	background-image: linear-gradient(to bottom right, #0040ff, #668cff);
+	padding: 5px;
+	overflow: hidden;
+	box-shadow: 0 0px 10px #666;
+	color: #fff;
+}
+.header img{
+	float: left;
+	max-width: 50px;
+	margin: 5px 20px;
+}
+.header img:hover{
+	box-shadow: 0 0 10px #ddd;
+	transition: .3s ease;
+}
+.header h1{
+	font-size: 24px;
+	margin: 0;
+	line-height: 50px;
+	float: left;
+	margin-right: 20px;
+}
+.header a{
+	color: #fff;
+	text-decoration: none;
+}
+.header a:hover{
+	text-decoration: none;
+	transition: .3s ease;
+	color: #999;
+}
+.header p{
+	float: right;
+	margin-right: 20px;
+}
+
+.sticky{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.topnav{
+	float: left;
+	line-height: 50px;
+	display: block;
+}
+.topnav a{
+	color: #fff;
+	text-align: center;
+	padding: 23px 20px;
+	text-decoration: none;
+}
+.topnav a:hover{
+	transition: .3s ease;
+	background: #99b3ff;
+	color: #111;
+}
+
+.row{
+	padding: 0 20px;
+	max-width: 1600px;
+	margin: auto;
+}
+.row:after{
+	content:"";
+	display: table;
+	clear: both;
+}
+
+.leftcolumn{
+	margin-top: 20px;
+    display: grid;
+	width: 75%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+	float: left;
+}
+
+.card{
+	background: #fff;
+	border-radius: 10px;
+}
+.card-text{
+	padding: 15px;
+}
+.card-text h2{
+	margin: 0;
+	font-size: 18px;
+}
+.card-text a{
+	color: #000;
+	text-decoration: none;
+}
+.card-text a:hover{
+	color: #0052cc;
+	transition: .3s ease;
+	text-decoration: none;
+}
+.leftcolumn .card {
+    width: 100%;
+    float: none;
+}
+.leftcolumn .card:hover{
+	box-shadow: 0 0 10px #999;
+	transition: .3s ease;
+}
+.leftcolumn .card img{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.card img{
+	padding: 0;
+	width: 100%;
+	box-shadow: 0px 2px 2px #ddd;
+}
+.card img:hover{
+	background-color: #000;
+	opacity: .5;
+	transition: .3s ease;
+}
+.rightcolumn{
+	margin-top: 20px;
+	float: left;
+	width: 25%;
+	padding-left: 20px;
+	top: 20;
+	float: left;
+}
+
+.rightcolumn .card{
+	padding: 20px 20px 0;
+}
+
+.rightcolumn .card h2{
+	margin: 0;
+	margin-bottom: 15px;
+}
+.rightcolumn .terlaris h2{
+	font-size: 20px;
+}
+.rightcolumn .terlaris a{
+	text-decoration: none;
+	color: #000;
+}
+.rightcolumn .terlaris a:hover{
+	color: #0052cc;
+	transition: .3s ease;
+}
+.rightcolumn .terlaris img{
+	margin-bottom: 20px;
+}
+
+.footer{
+	margin-top: 20px;
+	background: #fff;
+	box-shadow: 0 5px 10px #666;
+	padding: 20px;
+	text-align: center;
+}
+.footer img{
+	max-width: 72px;
+}
+.footer img:hover{
+	box-shadow: 0 0 10px #666;
+	transition: .3s ease;
+}
+.footer h1{
+	margin: 0 0 5px;
+}
+.footer p{
+	margin: 0;
+}
+.footer a{
+	text-decoration: none;
+	color: #000;
+}
+.footer a:hover{
+	color: #0052cc;
+	transition: .3s ease;
+}
+
+@media only screen and (max-width: 960px) {
+	.leftcolumn{
+		grid-gap: 10px;
+	}
+	.rightcolumn{
+		padding-left: 10px;
+	}
+}
+
+@media only screen and (max-width: 892px) {
+	p.nama{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.leftcolumn{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.card-text{
+		padding: 10px;
+	}
+	.card-text h2{
+		font-size: 15px;
+	}
+	.rightcolumn .card h2{
+		font-size: 20px;
+	}
+	.rightcolumn .card .terlaris h2{
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 668px) {
+	.header{
+		padding: 5px 20px;
+	}
+	.header img{
+		float: left;
+		margin: auto;
+		background-color: #000;
+		display: block;
+	}
+	.header h1{
+		float: none;
+		display: block;
+		width: 100%;
+		margin-left: 70px;
+		text-decoration: none;
+	}
+	.topnav{
+		display: none;
+		margin: auto;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.leftcolumn{
+		width: 100%;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.rightcolumn{
+		width: 100%;
+		padding-left: 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.leftcolumn{
+		grid-template-columns: 1fr 1fr;
+	}
+}
